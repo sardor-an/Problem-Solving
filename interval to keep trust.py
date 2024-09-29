@@ -1,9 +1,17 @@
 # Nothing can stop me and I never stop.
 
-n, m = map(int, input().split())
-day = n
+# tubson
+# def tubson(n):
+#     count = 0
+#     for k in range(1, int(n ** 0.5)+1):  # +1 might be need
+#         if n % k == 0:
+#             count += 1
+#             if k ** 2 != n:
+#                 count += 1
+#     return count <= 2
 
-while n != 0:
-    day += 1
-
-    
+# # eng yaqin tubson
+# n = int(input())
+# while not tubson(n):
+#     n -= 1
+# print(n)
