@@ -15,3 +15,14 @@
 # while not tubson(n):
 #     n -= 1
 # print(n)
+
+a = input()
+n = reversed(list(map(int, list(a))))
+q = ''
+for k in n:
+    q += str(k)
+
+if int(a) > int(q):
+    print(-1)
+else:
+    print(int(q))
