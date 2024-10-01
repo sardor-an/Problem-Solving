@@ -65,3 +65,57 @@
 #    b += 1
 # print(b)
   
+# first 5 minutes for BETER STRUCTURE.
+
+
+
+# Look for general view of all your works.
+# Now, you do not know about calisthenis way(rest days, eating and training things ...). What should you do? - just find it by doing it. Analyze yourself
+# Strong foundations + Logic + Practice + consistency 
+    # Use what you learn because it is language + consistency
+    # grow your logic by making questions.
+
+
+
+
+
+
+
+# 10th grade 
+
+# A
+# x = int(input())
+# y = int(input())
+# diff = abs(x - y)
+
+# if diff % 2 == 0:
+#     print(diff // 2)
+# else:
+#     print(diff // 2 +1)
+
+# B
+# def tubson(n):
+#     c = 0
+#     for k  in range(1, int(n**0.5)+1):
+#         if n % k == 0:
+#             c += 1
+#             if k * k != n:
+#                 c += 1
+#     return c
+
+# n = int(input())+1
+# c = 1
+# while n != 0:
+#     c += 1
+#     if tubson(c) == 2:
+#         n -= 1
+# print(c)
+
+# C
+n = int(input())
+a = sorted(list(map(int, input().split())))
+c = 0
+
+
+
+
