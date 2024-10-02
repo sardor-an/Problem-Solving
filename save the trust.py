@@ -72,8 +72,12 @@
 # Now, you do not know about calisthenis way(rest days, eating and training things ...). What should you do? - just find it by doing it. Analyze yourself
 
 
-
-
+nn = int(input())
+a = list(map(int, input().split()))
+c = 0
+for k in sorted(a)[1:]:
+  c += k - min(a)
+print(c)
 
 
 
@@ -109,9 +113,9 @@
 # print(c)
 
 # C
-n = int(input())
-a = sorted(list(map(int, input().split())))
-c = 0
+# n = int(input())
+# a = sorted(list(map(int, input().split())))
+# c = 0
 
 
 
