@@ -69,11 +69,8 @@
 
 
 
-# Look for general view of all your works.
 # Now, you do not know about calisthenis way(rest days, eating and training things ...). What should you do? - just find it by doing it. Analyze yourself
-# Strong foundations + Logic + Practice + consistency 
-    # Use what you learn because it is language + consistency
-    # grow your logic by making questions.
+
 
 
 
