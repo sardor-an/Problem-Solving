@@ -72,12 +72,12 @@
 # Now, you do not know about calisthenis way(rest days, eating and training things ...). What should you do? - just find it by doing it. Analyze yourself
 
 
-nn = int(input())
-a = list(map(int, input().split()))
-c = 0
-for k in sorted(a)[1:]:
-  c += k - min(a)
-print(c)
+# nn = int(input())
+# a = list(map(int, input().split()))
+# c = 0
+# for k in sorted(a)[1:]:
+#   c += k - min(a)
+# print(c)
 
 
 
@@ -120,3 +120,18 @@ print(c)
 
 
 
+# 10-sinf olimpiyada
+n, m , a, b = map(int, input().split())
+img = []
+for i in range(0, n):
+  img.append(input())
+img_new = []
+for k in img:
+  f = ''
+  for z in k:
+    f += z*b
+  img_new.append(f)
+  
+for k in img_new:
+  for g in range(0, a):
+    print(k)
