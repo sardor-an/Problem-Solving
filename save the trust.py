@@ -136,4 +136,21 @@
 #   for g in range(0, a):
 #     print(k)
 
-# 
+a = [[8],[2,4],[1,3,5],[2,6],[1,5,7],[2,4,6,8],[3,5,9],[4,8],[5,7,9,0],[6,8]]
+
+def you_can_move(x):
+    # it works with two pieace of string
+    x = str(x)
+    return int(x[0]) in a[int(x[1])]
+start = 0
+end = 1
+x = input()
+msg = 'YES'
+while len(x) != end:
+    if you_can_move(x[start:end+1]):
+        start += 1
+        end += 1
+    else:
+        msg = 'NO'
+        break
+print(msg)
