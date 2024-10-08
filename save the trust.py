@@ -121,17 +121,19 @@
 
 
 # 10-sinf olimpiyada
-n, m , a, b = map(int, input().split())
-img = []
-for i in range(0, n):
-  img.append(input())
-img_new = []
-for k in img:
-  f = ''
-  for z in k:
-    f += z*b
-  img_new.append(f)
+# n, m , a, b = map(int, input().split())
+# img = []
+# for i in range(0, n):
+#   img.append(input())
+# img_new = []
+# for k in img:
+#   f = ''
+#   for z in k:
+#     f += z*b
+#   img_new.append(f)
   
-for k in img_new:
-  for g in range(0, a):
-    print(k)
+# for k in img_new:
+#   for g in range(0, a):
+#     print(k)
+
+# 
