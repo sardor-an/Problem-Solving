@@ -17,3 +17,13 @@
     
 # print(manhattan(4))
 print(...)
+
+
+n = int(input())
+m = list(map(int, input().split()))
+a = list(range(0, 101, 2))
+
+
+for k in range(n+1):
+    a[k] += 1
+print(a)
