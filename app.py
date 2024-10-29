@@ -194,3 +194,17 @@
 #32 - 0265
 # a,b = map(int, input().split())
 # print(a,b)
+
+#$31 - 0479
+# n = int(input())
+# if (n / 100) == int(n / 100):
+#     print(int(n / 100))
+# else:
+#     print(n / 100)
+
+
+#32 -
+# a,b,c = list(map(int, input().split())) 
+# x = 3
+a = [1,2,3,4,3,2,1]
+print(a[1],a[-2] )
