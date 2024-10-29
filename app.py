@@ -69,8 +69,128 @@
 
 #17 - 0009
 # n = int(input())
-# r = list(range(n+1))
+# m = list(map(int, input().split()))
+    # python version
+# i = 0
+# while m.count(m[i]) == 2:
+#   i += 1
+# print(m[i])
 
-# for k in range(n+1):
-#     u = int(input())
-#     r[u]g
+    # logic versino
+# a = list(range(0, 101, 2)) # 101 * 2
+# for i in m:
+#     a[i] += 1
+
+# i = 0
+# while a[i] % 2 == 0:
+#     i += 1
+# print(i)
+
+    # god version
+# def find_single_number(nums):
+#     result = 0
+#     for num in nums:
+#         result ^= num
+#     return result
+
+
+#18 - 0138
+# x = int(input())
+# print(x**4 * (x + 8) + x**2 * (3 - 5*x) + x -12)
+
+#19 - 
+# n = int(input())
+# print(n*(n-3)//2)
+
+#20 - 0860
+# a,b = map(int, input().split())
+# f = list(range(a, b+1))
+# print(len(f))
+
+#21 - 0201
+# n = int(input())
+# if n % 2 == 1:
+#     print(n // 2 + 1)
+# else:
+#     print((n-2) // 2 + 2)
+
+#22 - 0045
+# n = int(input())
+# if n % 2 == 0:
+#   print((n + 1)*(n//2))
+# else:
+#   print((n+1)*(n//2) + (n+1)//2)
+
+#23 - 0082
+# n = int(input())
+# if n % 2 == 1:print('First player')
+# else:print('Second player')
+
+#24 - 0005
+# n = int(input())
+# if n != 0:
+#     def _(n):
+#         a = 0
+#         for k in range(1, int(abs(n)**0.5) + 1):
+#             if abs(n) % k == 0:
+#                 a += 1
+#                 if k ** 2 != abs(n):
+#                     a += 1
+
+#         return a
+#     if n ** 0.5 == int(abs(n)**0.5):
+#         print(_(n) + 1)
+#     else:print(_(n))
+# else:print(-1)
+
+#25 - 0024
+# h1,m1,s1 = map(int, input().split())
+# h2,m2,s2 = map(int, input().split())
+# total_s1 = (h1 * 3600) + (m1 * 60) + s1
+# total_s2 = (h2 * 3600) + (m2 * 60) + s2
+# print(total_s2 - total_s1)
+
+#26 - 1092
+# n = int(input())
+# if n % 2 == 0:print(n)
+# else: print(n*2)
+
+#27 - 0374
+# a = list(map(int, input().split()))
+# print(max(a) - min(a))
+
+#28 - 0938
+# a = int(input())
+# f = (10*27+22-9/3)*7-2022-1-a
+# print(int(f))
+
+#29 - 0812
+    # pythons version
+# print(int(f'{input()}', 16) % 2)
+
+    # version of me
+# a = input()
+# base = {'A':10, 'B':11, 'C':12, 'D':13, 'E':14, 'F':15}
+# r = 0
+# i = 0
+# for k in a[::-1]:
+#     if not k.isdigit():
+#         r += base[k] * 16 ** i
+#     else:r += int(k) * 16  ** i
+#     i += 1
+# print(r % 2)
+
+#30 - 0071
+# print(int(input()//2 + 1))
+
+#31 - 0076
+# a = sum(list(map(int, input().split())))
+# s = int(input())
+# if s - a >= 0:
+#     print(s - a)
+# else:
+#     print(0)
+
+#32 - 0265
+# a,b = map(int, input().split())
+# print(a,b)

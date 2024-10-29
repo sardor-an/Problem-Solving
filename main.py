@@ -16,14 +16,32 @@
 
     
 # print(manhattan(4))
-print(...)
 
 
-n = int(input())
-m = list(map(int, input().split()))
-a = list(range(0, 101, 2))
+# n = int(input())
+# m = list(map(int, input().split()))
+    # python version
+# i = 0
+# while m.count(m[i]) == 2:
+#   i += 1
+# print(m[i])
 
+    # logic versino
+# a = list(range(0, 101, 2)) # 101 * 2
+# for i in m:
+#     a[i] += 1
 
-for k in range(n+1):
-    a[k] += 1
-print(a)
+# i = 0
+# while a[i] % 2 == 0:
+#     i += 1
+# print(i)
+
+    # god version
+# def find_single_number(nums):
+#     result = 0
+#     for num in nums:
+#         result ^= num
+#     return result
+# n = int(input())
+# print(find_single_number(list(map(int, input().split()))))
+
