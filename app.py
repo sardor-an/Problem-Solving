@@ -206,5 +206,71 @@
 #32 -
 # a,b,c = list(map(int, input().split())) 
 # x = 3
-a = [1,2,3,4,3,2,1]
-print(a[1],a[-2] )
+# a = [1,2,3,4,3,2,1]
+# print(a[1],a[-2] )
+
+
+
+
+#33 - floyd uchburchagi       ---------wasted
+# def floyd_triangle(n):
+#     number = 1
+#     for i in range(1, n+1):
+#         for j in range(1, i+1):
+#             print(number, end=" ")
+#             number += 1
+#         print()
+
+# # Example usage:
+# n = 1502
+# floyd_triangle(n)
+
+#34
+# n = input()
+# s = int(n)
+# if not s < 38:
+#     if int(n[1]) <= 5:
+#         if 5 - int(n[1]) < 3:s += 5 - int(n[1])
+#     else:
+#         if 10 - int(n[1]) < 3:s += 10 - int(n[1])
+#     print(s)
+# else:
+#     print(int(n))
+
+
+#35
+# t = int(input())
+# T = int(input())
+# r = (t + T) % 24
+# if t + T == 24:print(0)
+# else:print(r)
+
+# def ok(n):
+#     s = int(n)
+#     a = []
+#     for k in range(100, s):
+#         if int(str(k)[1:]) + k == s:a.append(k)
+#     if a:
+#         if len(a) == 1:print(a[0])
+#         else:
+#             print(f'{a[0]} {a[1]}')
+
+# ok(int(input()))
+
+
+#
+n = int(input())
+x = 0
+def is_this(n):
+    s = 0
+    for k in range(1, int(n**0.5)+1):
+        if n % k == 0:
+            s += 1
+            if k ** 2 != k:s += 1
+    return s <= 2
+
+for k in range(1, n+1):
+    if is_this(k): x += 1
+
+if x % 2 == 0:print('Ali')
+else:print('Bobur')
