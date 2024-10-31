@@ -259,18 +259,53 @@
 
 
 #
-n = int(input())
-x = 0
-def is_this(n):
-    s = 0
-    for k in range(1, int(n**0.5)+1):
-        if n % k == 0:
-            s += 1
-            if k ** 2 != k:s += 1
-    return s <= 2
+# n = int(input())
+# x = 0
+# def is_this(n):
+#     s = 0
+#     for k in range(1, int(n**0.5)+1):
+#         if n % k == 0:
+#             s += 1
+#             if k ** 2 != k:s += 1
+#     return s <= 2
 
-for k in range(1, n+1):
-    if is_this(k): x += 1
+# for k in range(1, n+1):
+#     if is_this(k): x += 1
 
-if x % 2 == 0:print('Ali')
-else:print('Bobur')
+# if x % 2 == 0:print('Ali')
+# else:print('Bobur')
+
+def sieve_of_eratosthenes(n):
+  """
+  Finds all prime numbers up to a given limit `n` using the Sieve of Eratosthenes.
+
+  Args:
+    n: The upper limit for finding prime numbers.
+
+  Returns:
+    A list of prime numbers up to `n`.
+  """
+
+  prime = [True for i in range(n+1)]
+  p = 2
+  while (p * p <= n):
+    if (prime[p] == True):
+      for i in range(p * p, n+1, p):
+        prime[i] = False
+    p += 1
+
+  prime[0]= False
+  prime[1]= False
+
+  prime_numbers = []
+  for p in range(n+1):
+    if prime[p]:
+      prime_numbers.append(p)
+
+  return len(prime_numbers)
+
+# Example usage:
+limit = int(input())
+primes = sieve_of_eratosthenes(limit)
+if primes % 2 == 0:print('Ali')
+else: print('Bobur')
