@@ -361,3 +361,29 @@
 
 # for b in a:
 #   print(b)
+
+# def check(n: int) -> bool:
+#     if n % (sum(list(map(int, str(n)))) ** 2) == 0:
+#         return True
+#     return False
+
+# n = int(input())
+# x = 0
+# b = 0
+# while n != b:
+#     x += 1
+#     if check(x):
+#         b += 1
+    
+# print(x)
+
+a = input()
+f_1 = 0
+for i in range(len(a)):
+    # if a[i] == 1:
+    #     f_1 = i
+    #     print(f_1)
+    #     break
+    print(a[i])
+# if a[i:].count('33'):print('omadsiz chipta')
+# else:print('omadli chipta')
