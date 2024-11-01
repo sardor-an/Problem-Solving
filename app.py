@@ -275,37 +275,89 @@
 # if x % 2 == 0:print('Ali')
 # else:print('Bobur')
 
-def sieve_of_eratosthenes(n):
-  """
-  Finds all prime numbers up to a given limit `n` using the Sieve of Eratosthenes.
+# def sieve_of_eratosthenes(n):
+#   """
+#   Finds all prime numbers up to a given limit `n` using the Sieve of Eratosthenes.
 
-  Args:
-    n: The upper limit for finding prime numbers.
+#   Args:
+#     n: The upper limit for finding prime numbers.
 
-  Returns:
-    A list of prime numbers up to `n`.
-  """
+#   Returns:
+#     A list of prime numbers up to `n`.
+#   """
 
-  prime = [True for i in range(n+1)]
-  p = 2
-  while (p * p <= n):
-    if (prime[p] == True):
-      for i in range(p * p, n+1, p):
-        prime[i] = False
-    p += 1
+#   prime = [True for i in range(n+1)]
+#   p = 2
+#   while (p * p <= n):
+#     if (prime[p] == True):
+#       for i in range(p * p, n+1, p):
+#         prime[i] = False
+#     p += 1
 
-  prime[0]= False
-  prime[1]= False
+#   prime[0]= False
+#   prime[1]= False
 
-  prime_numbers = []
-  for p in range(n+1):
-    if prime[p]:
-      prime_numbers.append(p)
+#   prime_numbers = []
+#   for p in range(n+1):
+#     if prime[p]:
+#       prime_numbers.append(p)
 
-  return len(prime_numbers)
+#   return len(prime_numbers)
 
-# Example usage:
-limit = int(input())
-primes = sieve_of_eratosthenes(limit)
-if primes % 2 == 0:print('Ali')
-else: print('Bobur')
+# # Example usage:
+# limit = int(input())
+# primes = sieve_of_eratosthenes(limit)
+# if primes % 2 == 0:print('Ali')
+# else: print('Bobur')
+
+# s = input()
+
+# index = 0
+# var0 = 1
+# var1 = 1
+# def puu(s, var):
+#     _1_is_saved = 0
+#     _0_is_saved = 0
+#     _0_is_pre_saved = 0
+#     for i in s:
+#         if int(i) == 1:
+#             _1_is_saved = 1
+#         else:
+#             _0_is_saved += 1
+#         if not _1_is_saved:
+#     	    _0_is_pre_saved += 1
+
+#         if _0_is_saved != _0_is_pre_saved:
+#             var = 0
+#             break
+# puu(s, var0)
+# puu(s[::-1], var1)
+# if var0 and var1:print('YES')
+# else:print('NO')
+
+# v = int()
+# if v >= 2 and v <= 7:print('Econom 105K')
+# elif v == 8 or v == 9:print('Business 140K')
+# else:print('VIP 210K')
+
+# n, k = map(int, input().split())
+# r = 0
+# if n == 0:print(0)
+# else:
+#     for i in range(n):
+#         r += k**i
+#     print(r % 10e9+7)
+# n, k = map(int, input().split())
+# r = 0
+# if n == 0:print(0)
+# else:
+#   print(int((k**n - 1) / (k-1)))
+
+# t = int(input())
+# a = []
+# for k in range(t):
+#   i = int(input())
+#   a.append(i*i)
+
+# for b in a:
+#   print(b)
