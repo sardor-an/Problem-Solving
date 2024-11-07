@@ -396,3 +396,43 @@
 #             print(k, end=' ')
 # number(126)
 
+
+# a = '011111000'
+# copy_a = ''
+# one = False
+# for i in range(len(a)):
+#     if a[i] == '1':
+#         one = True
+#         copy_a += '1'
+#     else:
+#         if a[i] == '0' and one and a[i-1] != '0':
+#             copy_a += '0'
+
+# if '0' in copy_a[:-1]:print('NO')
+# else:print('YES')
+
+
+
+# n = int(input())
+nums = list(map(int, input().split()))
+s = ''
+def check(n):
+    # n*(n+1) // 2
+
+    for i in range(0, n//2 + 2):
+        if n == (i * (i + 1))//2:
+            return True
+    return False
+    
+print(check(5))
+for k in nums:
+    if check(k):s += '1'
+    else: s += '0'
+print(s)
+
+
+
+            
+
+    
+  	
