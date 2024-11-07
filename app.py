@@ -377,13 +377,22 @@
     
 # print(x)
 
-a = input()
-f_1 = 0
-for i in range(len(a)):
+# a = input()
+# f_1 = 0
+# for i in range(len(a)):
     # if a[i] == 1:
     #     f_1 = i
     #     print(f_1)
     #     break
-    print(a[i])
+    # print(a[i])
 # if a[i:].count('33'):print('omadsiz chipta')
 # else:print('omadli chipta')
+
+
+#36
+# def number(n):
+#     for k in range(100, n+1):
+#         if int(k) + int(str(k)[1:]) == n:
+#             print(k, end=' ')
+# number(126)
+
