@@ -414,24 +414,37 @@
 
 
 # n = int(input())
-nums = list(map(int, input().split()))
-s = ''
-def check(n):
-    # n*(n+1) // 2
+# nums = list(map(int, input().split()))
+# s = ''
+# def check(n):
+#     # n*(n+1) // 2
 
-    for i in range(0, n//2 + 2):
-        if n == (i * (i + 1))//2:
-            return True
-    return False
+#     for i in range(0, n//2 + 2):
+#         if n == (i * (i + 1))//2:
+#             return True
+#     return False
     
-print(check(5))
-for k in nums:
-    if check(k):s += '1'
-    else: s += '0'
-print(s)
+# print(check(5))
+# for k in nums:
+#     if check(k):s += '1'
+#     else: s += '0'
+# print(s)
 
 
+# a = int(input())
+# for k in range(a):
+#   print((int(input())**2 + 1)*k)
 
+
+# def check(n, k):
+#     if k == n*(n+1)//2:return '1'
+#     return '0'
+# s = ''
+# n = int(input())
+# for k in range(n):
+#   a, b = map(int, input().split())
+#   s += check(a,b)
+# print(s)
             
 
     
