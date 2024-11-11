@@ -446,6 +446,24 @@
 #   s += check(a,b)
 # print(s)
             
+#93 - 0573
+# n, t = map(int, input().split())
+# print((24-n)+t)
 
-    
+#94
+# print('0001100'.strip('0'))
   	
+
+#95
+# n = int(input())
+# s = 0
+# for k in range(1, n+1):
+#   s += (k*(k+1))//2
+# print(s)
+
+#106 - 0612
+d = {}
+for i in range(1, 27):
+    d[i] = chr(ord('A') + i - 1)
+a, b = map(str, input().split())
+print(d[a]+d[b])
