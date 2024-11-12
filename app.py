@@ -462,8 +462,75 @@
 # print(s)
 
 #106 - 0612
-d = {}
-for i in range(1, 27):
-    d[i] = chr(ord('A') + i - 1)
-a, b = map(str, input().split())
-print(d[a]+d[b])
+# d = {}
+# for i in range(1, 27):
+#     d[i] = chr(ord('A') + i - 1)
+# r = 0
+# a, b = map(str, input().split())
+# for k, i in d.items():
+#     if a == i: r += k
+#     if b == i: r += k
+# print(r)
+
+#107 - 0215
+# n = int(input())
+# an = ((2**((2*n) + 1)) * 3) - 2**(n+1)
+# if an % 5 == 0:print('A')
+# else: print('B')
+
+#0514 
+# x, y = map(int, input().split())
+# print((y/x) * 100)
+
+# a = int(input())
+
+# if a >= 0:
+#     a_n = str(bin(a))[2:]
+#     print(a_n.zfill(32))
+# else:
+#     a_n = str(bin(a))[3:]
+#     len_an = len(a_n)
+#     p1 = a_n
+#     p2 = '1'*(31-len_an)
+#     print(f'{p2}{p1}1')
+
+
+def tub(n):
+    a = []
+    for k in range(1, int(n**0.5)+1):
+        if n % k == 0:
+            a.append(k)
+            if k ** 2 != n:
+                a.append(n // k)
+    return a
+
+def tub_ajrat(n):
+    i = 2
+    while True:
+        if n % i == 0 and len(tub(i)) > 2:
+            n = n // i
+            if n % i != 0 and len(tub(n)) > 2:
+    
+                i += 1
+
+
+    l = int(input())
+    a = sorted(list(map(int, input().split())))
+    r = 0
+    i = 0
+    while i < l:
+        if i+1 < l-1 and a[i] == a[i+1]:
+            r += 1
+            i += 2
+        else:
+            i += 1
+    print(r)
+
+
+# from math import log2
+# print(log2(int(input())))
+
+n = int()
+# a = reversed(sorted(list(map(int, input().split()))))
+a = list(map(int, input().split()))
+i, j = 0, n
