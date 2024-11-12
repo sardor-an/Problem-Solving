@@ -598,11 +598,22 @@
 #   if k % 3 == 0 and k % 7 != 0:
 #     r += k
 # print(k)
-from math import ceil
-x, y = map(int, input().split())
-r = y/x * 100
-unw = r - int(r)
-if str(unw)[4] >= 5:
-    f = str(unw)[:3]
-    ...
 
+# x, y = map(int, input().split())
+# if x != 0:
+#     p = '.00%'
+#     r = y/x * 100
+#     unw = str(r - int(r))[:4]
+#     if float(unw) == 0:
+#         p = '.00%'
+#     else:
+#         if int(unw[-1]) >= 5:
+#             p = f'{unw[:3]}{int(unw[3])+1}%'[1:]
+#     print(f'{int(r)}{p}')
+# else:print('0.00%')
+
+b = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'
+p = sorted(b)[26:] + sorted(b)[:26]
+s = input()
+for i in p:
+    print(f'{i} {s.count(i)}')
