@@ -636,3 +636,13 @@
 # for k in range(a):
 #     i = input()
 #     print(len(i) - halal_robo(i))
+
+
+# a = int(input())
+# i = 0
+# while True:
+#     if sum(map(int, str(i))) == a:break
+#     i += 1
+# print(i)
+##########VS#######
+# print(a % 9)
