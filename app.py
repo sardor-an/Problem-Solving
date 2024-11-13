@@ -646,3 +646,27 @@
 # print(i)
 ##########VS#######
 # print(a % 9)
+
+
+# n = int(input())
+# c = []
+# r = 0
+# for k in range(n):
+#     a, b = map(int, input().split())
+#     c += list(range(a+1, b))
+# if 0 in set(c):
+#     r = len(set(c)) - 1
+# else:r = len(set(c))
+# i = 1
+# for k in range(1, r+1):
+#     i *= k
+# print(i)
+
+# n = int(input())
+# def gen_9(n):
+#     i = 0
+#     r = 0
+#     while r != n:
+#         if sum(map(int, str(i))) %  1+ 9 == 0 and ...
+
+
