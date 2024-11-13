@@ -612,8 +612,27 @@
 #     print(f'{int(r)}{p}')
 # else:print('0.00%')
 
-b = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'
-p = sorted(b)[26:] + sorted(b)[:26]
-s = input()
-for i in p:
-    print(f'{i} {s.count(i)}')
+# b = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'
+# p = sorted(b)[26:] + sorted(b)[:26]
+# s = input()
+# for i in p:
+#     print(f'{i} {s.count(i)}')
+
+
+# n = int(input())
+# for k in range(n):
+#   i = input()
+#   print(len(i) - len(set(map(int, i))))
+
+
+# def halal_robo(string):
+#     string = sorted(string)
+#     a = 0
+#     for i in range(len(string)):
+#         if i+1 < len(string) and string[i] != string[i+1]:
+#             a += 1
+#     return a+1
+# a = int(input())
+# for k in range(a):
+#     i = input()
+#     print(len(i) - halal_robo(i))
