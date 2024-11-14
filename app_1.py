@@ -27,15 +27,18 @@
 # print(fuck_hanif_0514(x,y).replace(' ', '').strip(''))
 
 
-def calculate_percentage(x, y):
+# def calculate_percentage(x, y):
 
-  percentage = (x / y) * 100
-  formatted_percentage = f"{percentage:.2f}%"
-  return formatted_percentage
+#   percentage = (x / y) * 100
+#   formatted_percentage = f"{percentage:.2f}%"
+#   return formatted_percentage
 
-# Example usage:
-x, y = 20, 5
-result = calculate_percentage(x, y)
-# print(result)  # Output: 400.00%
+# # Example usage:
+# x, y = 20, 5
+# result = calculate_percentage(x, y)
+# # print(result)  # Output: 400.00%
 
-print(f'{0.5457:.5f}%')
+# print(f'{0.5457:.5f}%')
+
+# n = int(input()[:-1]) / 100
+# print(f'{int(100/n)}%')
