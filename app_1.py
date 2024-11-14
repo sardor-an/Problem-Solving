@@ -42,3 +42,46 @@
 
 # n = int(input()[:-1]) / 100
 # print(f'{int(100/n)}%')
+
+def tub(n):
+    a = 0
+    for  k in range(1, int(n**0.5)+1):
+        if n % k == 0:
+            a += 1
+            if k * k != n:a += 1
+    if a > 2:return False
+    return True
+def chedd(a: list, n: int):
+    if a[-1] % n == 0:
+        a[-1] *= n
+    else:
+        a.append(n)
+def fuck_hanif_1054(n):
+    m = int(n ** 0.5)
+    a = [1]
+    i = 2
+    if tub(n):return [1, n]
+    while i <= m:
+        if n % i == 0 and  tub(i):
+            a.append(i)
+            # chedd(a,i)
+            f = n // i
+            if tub(f):
+                a.append(n//i)
+                # chedd(a, n//i)
+                n //= n // i
+            n //= i
+        else:
+            i += 1
+    return a[1:]
+def collect(m: list):
+    return sum(int, m)
+
+n = int(input())
+s = sum(map(int, str(n)))
+g = 0
+for k in fuck_hanif_1054(n):
+    g += sum(map(int, str(k)))
+print(1 if g == s else 0)
+
+
