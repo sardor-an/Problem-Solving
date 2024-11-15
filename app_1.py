@@ -77,24 +77,23 @@ def fuck_hanif_1054(n):
 def collect(m: list):
     return sum(int, m)
 
+print(fuck_hanif_1054(999_999_999_999_999_999))
+
 # n = int(input())
 # s = sum(map(int, str(n)))
 # g = 0
 # for k in fuck_hanif_1054(n):
 #     g += sum(map(int, str(k)))
 # print(1 if g == s else 0)
-
-
-def fuck_hanif_30(n):
-    def check(n):
+def check(n):
         a = [1,2,3,4,5,6,7,8]
         for k in a:
             if str(k) in str(n):
                 return False
         return True
-    
+def fuck_hanif_30(n):
     if check(n):
-        return 9
+        return n
     else:
         if int(str(bin(n))[2:].replace('1', '9')) % n != 0:
             m = n
@@ -102,8 +101,22 @@ def fuck_hanif_30(n):
                 m += 1
             return str(bin(m))[2:].replace('1', '9')
         return str(bin(n))[2:].replace('1', '9')
-n = int(input())
-for k in range(n):
-  print(fuck_hanif_30(int(input())))
+# n = int(input())
+# for k in range(n):
+#   print(fuck_hanif_30(int(input())))
 
 
+
+
+
+x1, y1 = map(int, input().split())
+x2, y2 = map(int, input().split())
+x3, y3 = map(int, input().split())
+#slope1 = (4 - 2) / (3 - 1) = 2 / 2 = 1
+#distance1 = sqrt((3 - 1)^2 + (4 - 2)^2) = sqrt(4 + 4) = sqrt(8)
+#area = 1/2 * |(1*4 + 3*6 + 5*2) - (2*3 + 4*5 + 6*1)| = 0
+#(1, 2), (3, 4) va (5, 6)
+area = 0.5*abs((x1*y2 + x2*y3 + x3*y1) - (y1*x2 + y2*x3 + y3*x1))
+
+if not area:print('uchburchak emas')
+else:print('uchburchak')
