@@ -116,7 +116,7 @@ x3, y3 = map(int, input().split())
 #distance1 = sqrt((3 - 1)^2 + (4 - 2)^2) = sqrt(4 + 4) = sqrt(8)
 #area = 1/2 * |(1*4 + 3*6 + 5*2) - (2*3 + 4*5 + 6*1)| = 0
 #(1, 2), (3, 4) va (5, 6)
-area = 0.5*abs((x1*y2 + x2*y3 + x3*y1) - (y1*x2 + y2*x3 + y3*x1))
+# area = 0.5*abs((x1*y2 + x2*y3 + x3*y1) - (y1*x2 + y2*x3 + y3*x1))
 
-if not area:print('uchburchak emas')
-else:print('uchburchak')
+# if not area:print('uchburchak emas')
+# else:print('uchburchak')
