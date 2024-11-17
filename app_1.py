@@ -199,26 +199,24 @@
 # n = int(input())
 # r = []
 
-
-
-def factorial(n, k):
-    r = 1
-    while n > 0:
-        r *= k
-        k -= 1
-        n -= 1
-    return r
+# def factorial(n, k):
+#     r = 1
+#     while n > 0:
+#         r *= k
+#         k -= 1
+#         n -= 1
+#     return r
 
     
-print(factorial(3, 6))
-n = int(input())
-for k in range(n):
-    a, b = map(int, input().split())
-    c = list(range(a, b+1))
-    for i in c:
-        if i != 0 and i not in r:
-            r.append(i)
-f = 1
-if n == 1:print(len(r) % (10**9+7))
-else:
-    ...
+# print(factorial(3, 6))
+# n = int(input())
+# for k in range(n):
+#     a, b = map(int, input().split())
+#     c = list(range(a, b+1))
+#     for i in c:
+#         if i != 0 and i not in r:
+#             r.append(i)
+# f = 1
+# if n == 1:print(len(r) % (10**9+7))
+# else:
+#     ...
