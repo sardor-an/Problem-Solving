@@ -39,3 +39,58 @@
 # for k in range(10000):
 #     print(fuck_hanif_30_pro(499))
 
+# n, k = map(int, input().split())
+# # nx + k
+# def tool(n, k):
+#     ...
+# i = 1
+# result = 0
+# while result != n:
+#     ex = i*n + k
+#     if (ex * 4) % (n - 1) == 0:
+#         ex = (ex * 4) // (n - 1) + k
+#         if (ex*4) % (n-1) == 0:
+#             ex = (ex*4) // (n-1)
+#     else:
+#         i += 1
+
+# x, y = map(int, input().split())
+# def fuck_hanif(y):
+#     global r
+#     if r - y < 0:return 0
+#     return r - y
+# i = 0
+# r = 0
+# while r != 100:
+#     fuck_hanif(y)
+#     r += x
+#     fuck_hanif(y)
+#     fuck_hanif(y)
+
+#     i += 1
+# print(i)
+
+
+
+# def fuck_hanif_yaxlitla(s):
+#     s = s / 4
+#     if s - int(s) > 0 and s - int(s) < 0.5:return int(s)
+#     else: return int(s) + 0.5
+
+# a = fuck_hanif_yaxlitla(sum(map(int, input().split())))
+# b = fuck_hanif_yaxlitla(sum(map(int, input().split())))
+# c = float(input())
+# d = float(input())
+# r = (a+b+c+d) / 4
+# print(r)
+# if r - int(r) > 0.5:print(int(r)+1)
+# else:print(int(r) + 0.5)
+
+
+
+n = int(input())
+a = list(map(int, input().split()))
+r = 0
+f = []
+for k in a:
+    if a.count(k) > r:r = k
