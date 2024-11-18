@@ -89,8 +89,11 @@
 
 
 n = int(input())
-a = list(map(int, input().split()))
+a = sorted(list(map(int, input().split())))
 r = 0
-f = []
-for k in a:
-    if a.count(k) > r:r = k
+i = None
+for b in range(1, 5+1):
+    if a.count(b) > r:
+        r = a.count(b)
+        i = b
+print(i)
