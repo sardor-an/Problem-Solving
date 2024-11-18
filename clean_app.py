@@ -181,27 +181,22 @@ def fuck_hanif_tub_ajrat(n):
 #     c = int(input())
 #     print(a[0]*c)
 
-def most_near(n: int, a: list):
-    m = abs(a[0] - n)
-    i = a[0]
-
-    for k in a:
-        if abs(k - n) < m:
-            i = k
-    return i
-
-
-
-
-# n = int(input())
+n = int(input())
 a = [100, 20, 10, 5, 1]
-# c = 0
-# while n != 0:
-#     f = most_near(n, a)
-#     d = n // f
-#     c += d
-#     print(c)
-#     n -= d * f
-# print(c)
+def most_near(n: int):
+    if n >= 100:i = 100
+    elif n <= 99 and n >= 20:i = 20
+    elif n <= 19 and  n >= 10: i = 10
+    elif n <= 9 and n >= 5: i = 5
+    else: i = 1
 
-print(most_near(25, a))
+    return i
+c = 0
+while n != 0:
+    f = n // most_near(n)
+    if n - (most_near(n) * f) not in a:
+        n -= most_near(n) * f
+        c += 1
+    else:
+        ...
+    
