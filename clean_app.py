@@ -88,12 +88,30 @@
 
 
 
-n = int(input())
-a = sorted(list(map(int, input().split())))
-r = 0
-i = None
-for b in range(1, 5+1):
-    if a.count(b) > r:
-        r = a.count(b)
-        i = b
-print(i)
+# n = int(input())
+# a = sorted(list(map(int, input().split())))
+# r = 0
+# i = None
+# for b in range(1, 5+1):
+#     if a.count(b) > r:
+#         r = a.count(b)
+#         i = b
+# print(i)
+
+
+
+# s, t = map(int, input().split())
+# a,b = map(int, input().split()) # daraxt joylashuvi
+# m, n = map(int, input().split()) # to'kilgan olmalar va apelsinlar soni
+# m_olma_d = map(int, input().split()) # olmalarning har biri uchun d qiymatlar
+# n_apelsin_d = map(int, input().split()) # apelsinlarning har biri uchun d qiymatlar
+# apelsin, olma = 0, 0
+# eshak = range(s, t+1)
+# for k in m_olma_d:
+#   if a + k in eshak:
+#    	olma += 1
+# for k in n_apelsin_d:
+#   if b + k in eshak:
+#     apelsin += 1
+# print(olma)
+# print(apelsin)
