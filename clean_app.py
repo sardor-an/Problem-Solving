@@ -115,3 +115,93 @@
 #     apelsin += 1
 # print(olma)
 # print(apelsin)
+
+
+# a,b = map(int, input().split())
+# h = int((2*a)/b)
+# if a > (h*b)/2:print(h+1)
+# else:print(h)
+
+
+def fuck_hanif_tub_ajrat(n):
+    def tub(f):
+        result = 2
+        for k in range(2, int(f**0.5)+1):
+            if f % k == 0:
+                result += 1
+                if k * k != f:
+                    result += 1
+        return result > 2
+    def checker(a: list,n: int):
+        if a[-1] == n:
+            a[-1] = a[-1] * n
+        else:a.append(n)
+    a = [1]
+    m = n
+    i = 2
+    while i <= int(n ** 0.5)+1:
+        if not tub(i) and  m % i == 0:
+            a.append(i)
+            # checker(a, i)
+
+            if m // i not in a:
+                a.append(m // i)
+                # checker(a, m // i)/
+                m //= (m // i)
+            else:
+                m //= i
+        else:
+            i += 1
+    return a[1:]
+
+# n = int(input())
+# r = range(1, n+1)
+
+# i = 0
+# for k in fuck_hanif_tub_ajrat(n+1):
+#     if k not in r:
+#         i = k
+#         break
+# print(k)
+
+# print(fuck_hanif_tub_ajrat(198))
+
+
+# t,s,v = map(float, input().split())
+# r = (s / t) - v
+# if r - int(r) == 0:print(int(r))
+# else:print(r)
+
+
+# a = list(map(int, input().split()))
+
+# if len(a) == 2:
+#     print(sum(a))
+# else:
+#     c = int(input())
+#     print(a[0]*c)
+
+def most_near(n: int, a: list):
+    m = abs(a[0] - n)
+    i = a[0]
+
+    for k in a:
+        if abs(k - n) < m:
+            i = k
+    return i
+
+
+
+
+# n = int(input())
+a = [100, 20, 10, 5, 1]
+# c = 0
+# while n != 0:
+#     f = most_near(n, a)
+#     d = n // f
+#     c += d
+#     print(c)
+#     n -= d * f
+# print(c)
+
+print(most_near(25, a))
