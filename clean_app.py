@@ -192,11 +192,6 @@ def most_near(n: int):
 
     return i
 c = 0
+
 while n != 0:
-    f = n // most_near(n)
-    if n - (most_near(n) * f) not in a:
-        n -= most_near(n) * f
-        c += 1
-    else:
-        ...
-    
+    ...
